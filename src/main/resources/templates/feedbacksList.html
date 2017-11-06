@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>feedback</title>
+</head>
+<body>
+    <!--<div class="blog-post" th:each="feedback: ${feedbacks}">-->
+        <!--<h3 class="blog-post-title">-->
+            <!--<a th:text="${feedback.id}" th:href="@{'/feedbacks/' + ${feedback.id}}">-->
+                <!--this is a feed back id-->
+            <!--</a>-->
+            <!--<h4 th:text="${feedback.firstName}"></h4>-->
+        <!--</h3>-->
+    <!--</div>-->
+
+    <table id="vets" class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 150px;">Id</th>
+            <th style="width: 150px;">Name</th>
+            <th>City</th>
+            <th style="width: 120px">Telephone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="feedback : ${feedbacks}">
+            <td>
+                <a th:href="@{/feedbacks/__${feedback.id}__}" th:text="${feedback.id}"/></a>
+            </td>
+            <td th:text="${feedback.firstName + ' ' + feedback.lastName}"></td>
+            <td th:text="${feedback.city}"/>
+            <td th:text="${feedback.phoneNum}"/>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
