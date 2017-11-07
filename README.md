@@ -10,7 +10,7 @@ customer feedback application.
 ## Running locally
 
 ```bash
-git clone https://github.com/spring-projects/spring-petclinic.githttps://github.com/yuhui-lin/spring-feedback.git
+git clone https://github.com/yuhui-lin/spring-feedback.git
 cd spring-feedback
 ./mvnw spring-boot:run
 # unit test

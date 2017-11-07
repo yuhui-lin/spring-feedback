@@ -4,9 +4,6 @@
     <list default="true" id="7ade7688-ee80-4a95-993f-27f9b3ad78ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/controller/FeedbackController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/controller/FeedbackController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Feedback.java" afterPath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Feedback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Product.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +86,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="696">
-                <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <first_editor relative-caret-position="456">
+                <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -182,9 +179,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/yuhui/spring/feedback/model/ValidatorTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/controller/FeedbackController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/yuhui/spring/feedback/controller/FeedbackControllerTests.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Feedback.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yuhui/spring/feedback/model/Product.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -500,12 +497,12 @@
       <updated>1509895279577</updated>
       <workItem from="1509895289545" duration="14553000" />
       <workItem from="1509978101924" duration="15626000" />
-      <workItem from="1510062157779" duration="4268000" />
+      <workItem from="1510062157779" duration="4367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34447000" />
+    <option name="totallyTimeSpent" value="34546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -942,8 +939,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="696">
-            <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <first_editor relative-caret-position="456">
+            <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
