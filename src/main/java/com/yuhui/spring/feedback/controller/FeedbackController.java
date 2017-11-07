@@ -17,7 +17,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- *
+ * main controller for adding/showing feedbacks.
  */
 @Controller
 public class FeedbackController {
@@ -28,7 +28,7 @@ public class FeedbackController {
     private ProductRepository productRepository;
 
     @GetMapping("/feedbacks")
-    public String feedbacks(Model model) {
+    public String getFeedbacks(Model model) {
 
         // TODO: add pageable and sort
         model.addAttribute("feedbacks", this.feedbackRepository.findAll());
@@ -47,7 +47,7 @@ public class FeedbackController {
     }
 
     @GetMapping("/feedbacks/create")
-    public String create(@RequestParam("id") String id, Model model) {
+    public String createFeedback(@RequestParam("id") String id, Model model) {
         // if this feedback has been submitted before, don't create.
         if (this.feedbackRepository.findOne(id) != null) {
             return "redirect:/";
@@ -57,7 +57,7 @@ public class FeedbackController {
     }
 
     @PostMapping(value = "/feedbacks/create")
-    public String create(@Valid Feedback feedback, BindingResult result) {
+    public String createFeedback(@Valid Feedback feedback, BindingResult result) {
         if (result.hasErrors()) {
             return "create";
         }

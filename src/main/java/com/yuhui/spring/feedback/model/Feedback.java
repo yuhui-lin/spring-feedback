@@ -12,7 +12,7 @@ import javax.validation.constraints.Min;
 public class Feedback {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.)
+    // @GeneratedValue(strategy = GenerationType.)
     // when id is auto generated, type cannot be String.
     private String id;
     @NotEmpty
