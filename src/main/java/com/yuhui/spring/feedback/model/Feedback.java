@@ -1,6 +1,11 @@
 package com.yuhui.spring.feedback.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
 @Entity
 public class Feedback {
@@ -9,13 +14,20 @@ public class Feedback {
 //    @GeneratedValue(strategy = GenerationType.)
     // when id is auto generated, type cannot be String.
     private String id;
+    @NotEmpty
     private String firstName;
+    @NotEmpty
     private String lastName;
     private String address;
+    @NotEmpty
+    @Digits(fraction = 0, integer = 10)
     private String phoneNum;
     private String city;
     private String country;
     private String postalCode;
+    @NotEmpty
+    @Max(5)
+    @Min(1)
     private String rating;
     private String comment;
 

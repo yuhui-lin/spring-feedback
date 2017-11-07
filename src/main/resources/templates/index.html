@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+    th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
     <meta charset="UTF-8"/>
     <title>index</title>
 </head>
 <body>
-    <a class="btn btn-default" th:href="@{/feedback-link}">Add Owner</a>
+    <h1>Shopping Center</h1>
+    <form th:each="product : ${products}">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value=""  th:text="${product.name}">
+                <img th:src="@{__${product.imagePath}__}"  height="200">
+            </label>
+        </div>
+    </form>
+
+    <a class="btn btn-default" th:href="@{/feedback-link}">Buy</a>
 
 </body>
 </html>

@@ -1,6 +1,8 @@
 package com.yuhui.spring.feedback.controller;
 
+import com.yuhui.spring.feedback.model.Product;
 import com.yuhui.spring.feedback.repository.FeedbackRepository;
+import com.yuhui.spring.feedback.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,9 +17,12 @@ public class IndexController {
 
     @Autowired
     private FeedbackRepository feedbackRepository;
+    @Autowired
+    private ProductRepository productRepository;
 
     @GetMapping("/")
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("products", this.productRepository.findAll());
         return "index";
     }
 
