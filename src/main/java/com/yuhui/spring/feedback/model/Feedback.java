@@ -2,7 +2,8 @@ package com.yuhui.spring.feedback.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -22,6 +23,7 @@ public class Feedback {
     @NotEmpty
     @Digits(fraction = 0, integer = 10)
     private String phoneNum;
+    @NotEmpty
     private String city;
     private String country;
     private String postalCode;
@@ -34,7 +36,8 @@ public class Feedback {
 //    @Temporal(TemporalType.TIMESTAMP)
 //    private Date createdDate;
 
-    public Feedback() {}
+    public Feedback() {
+    }
 
     public Feedback(String id) {
         this.id = id;

@@ -2,7 +2,6 @@ package com.yuhui.spring.feedback.controller;
 
 import com.yuhui.spring.feedback.model.Feedback;
 import com.yuhui.spring.feedback.model.Product;
-import com.yuhui.spring.feedback.repository.CustomerRepository;
 import com.yuhui.spring.feedback.repository.FeedbackRepository;
 import com.yuhui.spring.feedback.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,26 +13,26 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
+/**
+ *
+ */
 @Controller
 public class FeedbackController {
 
     @Autowired
     private FeedbackRepository feedbackRepository;
     @Autowired
-    private CustomerRepository customerRepository;
-    @Autowired
     private ProductRepository productRepository;
 
     @GetMapping("/feedbacks")
-    public String feedbacks(Model model){
+    public String feedbacks(Model model) {
 
         // TODO: add pageable and sort
         model.addAttribute("feedbacks", this.feedbackRepository.findAll());
         List<Product> p = this.productRepository.findAll();
-//        System.out.println(p.get(0));
         model.addAttribute("products", p);
         return "feedbacksList";
     }
@@ -58,7 +57,7 @@ public class FeedbackController {
     }
 
     @PostMapping(value = "/feedbacks/create")
-    public String create(Feedback feedback, BindingResult result) {
+    public String create(@Valid Feedback feedback, BindingResult result) {
         if (result.hasErrors()) {
             return "create";
         }

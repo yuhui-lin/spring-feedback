@@ -1,6 +1,5 @@
 package com.yuhui.spring.feedback.controller;
 
-import com.yuhui.spring.feedback.model.Product;
 import com.yuhui.spring.feedback.repository.FeedbackRepository;
 import com.yuhui.spring.feedback.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.Collections;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
 
 @Controller
 public class IndexController {

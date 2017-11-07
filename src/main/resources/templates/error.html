@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"
-    th:replace="~{fragments/layout :: layout (~{::body},'error')}">
+      th:replace="~{fragments/layout :: layout (~{::body},'error')}">
 <head>
     <meta charset="UTF-8"/>
     <title>error</title>
 </head>
 <body>
-    <h2>Something happened...</h2>
-    <p th:text="${message}">Exception message</p>
+<h2>Something happened...</h2>
+<p th:text="${message}">Exception message</p>
 </body>
 </html>

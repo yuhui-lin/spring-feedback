@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en"
-    th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+      th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
     <meta charset="UTF-8"/>
     <title>link</title>
 </head>
 <body>
-    <h2>You have successfully ordered the product.</h2>
-    <br/>
-    <h2>Your feedback id is: </h2>
-    <h2 th:text="${id}">1234567890</h2>
-    <!--<a class="btn btn-default" th:href="@{/feedbacks/${id}/create}">give feedback</a>-->
-    <h2>We will appreciate it if you fill out the feedback form by clicking the following button:</h2>
-    <a class="btn btn-default" th:href="@{/feedbacks/create(id=${id})}">give feedback</a>
+<h2>You have successfully ordered the product.</h2>
+<br/>
+<h2>Your feedback id is: </h2>
+<h2 th:text="${id}">1234567890</h2>
+<!--<a class="btn btn-default" th:href="@{/feedbacks/${id}/create}">give feedback</a>-->
+<h2>We will appreciate it if you fill out the feedback form by clicking the following button:</h2>
+<a class="btn btn-default" th:href="@{/feedbacks/create(id=${id})}">give feedback</a>
 
 </body>
 </html>

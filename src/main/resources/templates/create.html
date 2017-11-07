@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-    th:replace="~{fragments/layout :: layout (~{::body},'feedbacks')}">
+      th:replace="~{fragments/layout :: layout (~{::body},'feedbacks')}">
 <head>
     <meta charset="UTF-8"/>
     <title>create</title>
 </head>
 <body>
-    <!--<form th:action="@{/feedbacks}" th:object="${feedback}" method='post'>-->
-        <!--<h4 th:text="${feedback.id}">id here</h4>-->
-        <!--&lt;!&ndash;<input type="text" th:field="*{id}">&ndash;&gt;-->
-        <!--<input type="text" th:field="*{firstName}">-->
-        <!--<input type="text" th:field="*{lastName}">-->
-        <!--<input type="text" th:field="*{address}">-->
-        <!--<input type="text" th:field="*{phoneNum}">-->
-        <!--<input type="text" th:field="*{city}">-->
-        <!--<input type="text" th:field="*{country}">-->
-        <!--<input type="text" th:field="*{postalCode}">-->
-        <!--<input type="text" th:field="*{rating}">-->
-        <!--<input type="text" th:field="*{comment}">-->
-        <!--<input type="submit">-->
-    <!--</form>-->
-    <form th:object="${feedback}" class="form-horizontal" id="add-owner-form" method="post">
-        <div class="form-group has-feedback">
-            <input
-                    th:replace="~{fragments/inputField :: input ('First Name', 'firstName')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Last Name', 'lastName')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Address', 'address')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Telephone', 'phoneNum')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('City', 'city')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Country', 'country')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Postal Code', 'postalCode')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Rating', 'rating')}" />
-            <input
-                    th:replace="~{fragments/inputField :: input ('Comment', 'comment')}" />
+<!--<form th:action="@{/feedbacks}" th:object="${feedback}" method='post'>-->
+<!--<h4 th:text="${feedback.id}">id here</h4>-->
+<!--&lt;!&ndash;<input type="text" th:field="*{id}">&ndash;&gt;-->
+<!--<input type="text" th:field="*{firstName}">-->
+<!--<input type="text" th:field="*{lastName}">-->
+<!--<input type="text" th:field="*{address}">-->
+<!--<input type="text" th:field="*{phoneNum}">-->
+<!--<input type="text" th:field="*{city}">-->
+<!--<input type="text" th:field="*{country}">-->
+<!--<input type="text" th:field="*{postalCode}">-->
+<!--<input type="text" th:field="*{rating}">-->
+<!--<input type="text" th:field="*{comment}">-->
+<!--<input type="submit">-->
+<!--</form>-->
+<form th:object="${feedback}" class="form-horizontal" id="add-owner-form" method="post">
+    <div class="form-group has-feedback">
+        <input
+                th:replace="~{fragments/inputField :: input ('First Name', 'firstName')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Last Name', 'lastName')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Address', 'address')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Telephone', 'phoneNum')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('City', 'city')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Country', 'country')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Postal Code', 'postalCode')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Rating', 'rating')}"/>
+        <input
+                th:replace="~{fragments/inputField :: input ('Comment', 'comment')}"/>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-default" type="submit">
+                Submit
+            </button>
         </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button class="btn btn-default" type="submit">
-                    Submit
-                </button>
-            </div>
-        </div>
-    </form>
+    </div>
+</form>
 </body>
 </html>
